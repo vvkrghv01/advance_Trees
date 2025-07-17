@@ -4,30 +4,21 @@ import java.util.List;
 
 class MAryTree {
 
-    public class MAryTreeNode{
-        int val;
-        List<MAryTreeNode> children;
+    // structure of TreeNode
 
-        public MAryTreeNode(int val){
-            this.val = val;
-            this.children = new ArrayList<>();
+    static class TreeNode{
+        String name;
+        boolean isLocked;
+        int id;
+        TreeNode parent;
+        int anc_locked;
+        int des_locked;
 
-        }
-        public void addChild(MAryTreeNode child){
-            children.add(child);
+        ArrayList<TreeNode> child = new ArrayList<>();
+        TreeNode(String name, TreeNode parent){
+            this.name = name;
+            this.parent = parent;
         }
     }
-    MAryTreeNode root = new MAryTreeNode(1);
-    MAryTreeNode node2 = new MAryTreeNode(2);
-    MAryTreeNode node3 = new MAryTreeNode(3);
-    MAryTreeNode node4 = new MAryTreeNode(4);
-    MAryTreeNode node5 = new MAryTreeNode(5);
-    MAryTreeNode node6 = new MAryTreeNode(6);
-
-//    root.addChild(node2);
-//    root.addChild(node3);
-//    root.addChild(node4);
-//    node3.addChild(node5);
-//    node3.addChild(node6);
 
 }
